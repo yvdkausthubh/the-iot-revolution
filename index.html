@@ -132,6 +132,23 @@
         .social-links a:hover {
             color: #ff6a00;
         }
+
+        /* Animation for Buy Now Button */
+        .coming-soon {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -162,9 +179,8 @@
     <p>
         This book, <strong>The IoT Revolution: How Connected Devices Are Shaping Tomorrow</strong>, aims to provide a comprehensive exploration of IoT technology, its applications, and its implications for the future. We will examine the key components that comprise IoT systems, such as sensors, communication protocols, and data analytics, and discuss how these elements work together to create smarter environments. By delving into various real-world use cases, readers will gain insights into how IoT is redefining industries, enhancing productivity, and improving the quality of life.
     </p>
-    <a href="#" class="btn">Buy Now</a>
+    <a href="#" class="btn coming-soon">Coming Soon</a>
 </section>
-
 
 <section class="social-links">
     <h3>Follow Us for More Updates</h3>
