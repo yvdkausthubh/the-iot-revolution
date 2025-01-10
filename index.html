@@ -1,83 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>The IoT Revolution - Book Launch</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome for icons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The IoT Revolution - Official Website</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f8c8d4, #a0d0ff);
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #3e8e41;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #f8c8d4;
+            border-radius: 5px;
+        }
+
+        /* Main Section */
+        .hero {
+            background: linear-gradient(to left, #ff6a00, #ee0979);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+        }
+
+        /* About Section */
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+            background: #f0f0f0;
+        }
+
+        .about h2 {
+            color: #ff6a00;
+            font-size: 2.5em;
+        }
+
+        .about p {
+            color: #555;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #f8c8d4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button Styles */
+        .btn {
+            background-color: #ff6a00;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ee0979;
+        }
+
+        /* Social Media Links */
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 15px;
+            font-size: 2em;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ff6a00;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">IoT Revolution</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#preorder">Pre-order</a></li>
-      <li><a href="#follow">Follow</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<header>
+    <h1>The IoT Revolution</h1>
+    <p>Discover the future of technology</p>
+</header>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>The IoT Revolution</h1>
-      <p>Exploring the Future of IoT and Smart Technologies</p>
-      <a href="#preorder" class="cta-button">Pre-order Now</a>
-    </div>
-  </header>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Book</a>
+    <a href="#">Contact</a>
+</nav>
 
-  <!-- About Section -->
-  <section class="about" id="about">
+<section class="hero">
+    <h2>Welcome to the official website of *The IoT Revolution*</h2>
+    <p>Unlock the potential of IoT with cutting-edge insights and knowledge.</p>
+    <a href="#about" class="btn">Learn More</a>
+</section>
+
+<section id="about" class="about">
     <h2>About the Book</h2>
-    <div class="about-content">
-      <div class="about-text">
-        <p>The IoT Revolution is an exploration of the transformative potential of the Internet of Things, covering smart cities, healthcare, automation, and more. Get ready to learn how IoT is shaping the future!</p>
-      </div>
-      <div class="about-image">
-        <img src="iot-book.jpg" alt="Book Cover">
-      </div>
-    </div>
-  </section>
+    <p>This book is a comprehensive guide to the Internet of Things (IoT), exploring how IoT is revolutionizing industries, homes, and cities around the world. Dive into the future of technology and innovation.</p>
+    <a href="#" class="btn">Buy Now</a>
+</section>
 
-  <!-- Pre-order Section -->
-  <section class="preorder" id="preorder">
-    <h2>Pre-order the Book</h2>
-    <p>Don't miss out on early access to *The IoT Revolution* and join the IoT community! Pre-order now to get exclusive content.</p>
-    <a href="your-preorder-link.com" class="cta-button">Pre-order Now</a>
-  </section>
+<section class="social-links">
+    <h3>Follow Us for More Updates</h3>
+    <a href="https://facebook.com" target="_blank">Facebook</a>
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+</section>
 
-  <!-- Follow Section -->
-  <section class="follow" id="follow">
-    <h2>Follow for More Updates</h2>
-    <p>Stay connected and never miss a beat. Follow us on social media for the latest updates, exclusive content, and more!</p>
-    <div class="social-icons">
-      <a href="https://twitter.com/yourhandle" target="_blank" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a>
-      <a href="https://www.facebook.com/yourpage" target="_blank" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a>
-      <a href="https://www.instagram.com/yourhandle" target="_blank" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://www.linkedin.com/in/yourhandle" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or need further details, feel free to reach out!</p>
-    <form action="submit_form.php" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit" class="cta-button">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 The IoT Revolution | All Rights Reserved</p>
-  </footer>
+<footer>
+    <p>&copy; 2025 The IoT Revolution. All rights reserved.</p>
+    <p>For more information, contact us at <a href="mailto:contact@theiotrevolution.com">contact@theiotrevolution.com</a></p>
+</footer>
 
 </body>
 </html>
