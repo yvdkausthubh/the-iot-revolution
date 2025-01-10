@@ -1,0 +1,116 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #3B82F6; /* Blue */
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #FFD700; /* Gold */
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #FFA500; /* Darker Gold */
+}
+
+/* About Section */
+.about {
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Pre-order Section */
+.preorder {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #F3F4F6;
+}
+
+.preorder h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.preorder p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Follow Section */
+.follow {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.follow h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.follow p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  background-color: #0073e6;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #005bb5;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
