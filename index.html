@@ -6,13 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>The IoT Revolution - Book Launch</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome for icons -->
 </head>
 <body>
-  <!-- Header Section -->
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">IoT Revolution</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#preorder">Pre-order</a></li>
+      <li><a href="#follow">Follow</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
   <header class="hero">
     <div class="hero-content">
       <h1>The IoT Revolution</h1>
-      <p>A New Era of IoT Innovations</p>
+      <p>Exploring the Future of IoT and Smart Technologies</p>
       <a href="#preorder" class="cta-button">Pre-order Now</a>
     </div>
   </header>
@@ -20,30 +33,51 @@
   <!-- About Section -->
   <section class="about" id="about">
     <h2>About the Book</h2>
-    <p>This book dives into the future of the Internet of Things (IoT), exploring innovations, challenges, and real-world applications in smart cities, healthcare, and beyond.</p>
+    <div class="about-content">
+      <div class="about-text">
+        <p>The IoT Revolution is an exploration of the transformative potential of the Internet of Things, covering smart cities, healthcare, automation, and more. Get ready to learn how IoT is shaping the future!</p>
+      </div>
+      <div class="about-image">
+        <img src="iot-book.jpg" alt="Book Cover">
+      </div>
+    </div>
   </section>
 
   <!-- Pre-order Section -->
   <section class="preorder" id="preorder">
     <h2>Pre-order the Book</h2>
-    <p>Be the first to experience *The IoT Revolution*! Pre-order today and stay updated with exciting news and developments.</p>
+    <p>Don't miss out on early access to *The IoT Revolution* and join the IoT community! Pre-order now to get exclusive content.</p>
     <a href="your-preorder-link.com" class="cta-button">Pre-order Now</a>
   </section>
 
-  <!-- Follow for Updates Section -->
-  <section class="follow">
+  <!-- Follow Section -->
+  <section class="follow" id="follow">
     <h2>Follow for More Updates</h2>
-    <p>Stay connected with us for the latest updates, news, and sneak peeks from the book!</p>
+    <p>Stay connected and never miss a beat. Follow us on social media for the latest updates, exclusive content, and more!</p>
     <div class="social-icons">
-      <a href="https://twitter.com/yourhandle" target="_blank" class="social-icon">Twitter</a>
-      <a href="https://www.facebook.com/yourpage" target="_blank" class="social-icon">Facebook</a>
-      <a href="https://www.instagram.com/yourhandle" target="_blank" class="social-icon">Instagram</a>
+      <a href="https://twitter.com/yourhandle" target="_blank" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="https://www.facebook.com/yourpage" target="_blank" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://www.instagram.com/yourhandle" target="_blank" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.linkedin.com/in/yourhandle" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
     </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need further details, feel free to reach out!</p>
+    <form action="submit_form.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 The IoT Revolution | All Rights Reserved</p>
   </footer>
+
 </body>
 </html>
