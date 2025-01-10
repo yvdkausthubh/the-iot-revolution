@@ -3,25 +3,66 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF5733; /* Bright Red */
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  color: #FFD700; /* Gold */
 }
 
 /* Hero Section */
 .hero {
-  background-color: #3B82F6; /* Blue */
+  background: linear-gradient(45deg, #FF5733, #C70039); /* Red-Orange Gradient */
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 60px;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero p {
   font-size: 24px;
   margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .cta-button {
@@ -30,62 +71,85 @@
   padding: 15px 30px;
   text-decoration: none;
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 50px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #FFA500; /* Darker Gold */
+  background-color: #FF9800; /* Darker Gold */
+  transform: scale(1.1);
 }
 
 /* About Section */
 .about {
-  background-color: #f8f8f8;
+  background: #FFEB3B; /* Bright Yellow */
   padding: 60px 20px;
   text-align: center;
 }
 
 .about h2 {
-  font-size: 32px;
+  font-size: 36px;
+  color: #333;
   margin-bottom: 20px;
 }
 
-.about p {
+.about-content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text p {
   font-size: 18px;
   line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
+}
+
+.about-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
 }
 
 /* Pre-order Section */
 .preorder {
   padding: 60px 20px;
   text-align: center;
-  background-color: #F3F4F6;
+  background-color: #2196F3; /* Blue */
 }
 
 .preorder h2 {
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 20px;
+  color: white;
 }
 
 .preorder p {
-  font-size: 18px;
+  font-size: 20px;
+  color: white;
   margin-bottom: 30px;
 }
 
 /* Follow Section */
 .follow {
+  background-color: #4CAF50; /* Green */
   text-align: center;
   padding: 60px 20px;
 }
 
 .follow h2 {
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 20px;
+  color: white;
 }
 
 .follow p {
   font-size: 18px;
+  color: white;
   margin-bottom: 30px;
 }
 
@@ -96,15 +160,59 @@
 }
 
 .social-icon {
-  background-color: #0073e6;
+  background-color: #3B82F6; /* Blue */
   color: white;
   padding: 15px 30px;
-  border-radius: 5px;
+  border-radius: 50px;
   text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s;
 }
 
 .social-icon:hover {
-  background-color: #005bb5;
+  background-color: #2B64D1; /* Darker Blue */
+}
+
+/* Contact Section */
+.contact {
+  background-color: #9C27B0; /* Purple */
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.contact form input, .contact form textarea {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.contact form button {
+  background-color: #FFD700;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+  background-color: #FF9800;
 }
 
 /* Footer */
@@ -113,4 +221,36 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    margin-bottom: 30px;
+  }
+
+  .social-icon {
+    font-size: 16px;
+  }
 }
