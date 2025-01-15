@@ -18,24 +18,30 @@
         header {
             background: #3e8e41;
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             margin: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
         }
 
         /* Navigation */
         nav {
             background: #333;
             color: white;
-            padding: 10px;
+            padding: 15px 20px;
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 25px;
         }
 
         nav a {
@@ -43,42 +49,44 @@
             text-decoration: none;
             padding: 10px;
             font-size: 1.2em;
-            transition: background-color 0.3s;
+            text-transform: uppercase;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
         nav a:hover {
             background-color: #f8c8d4;
             border-radius: 5px;
+            transform: scale(1.05);
         }
 
         /* Main Section */
         .hero {
             background: linear-gradient(to left, #ff6a00, #ee0979);
             color: white;
-            padding: 100px 0;
+            padding: 120px 0;
             text-align: center;
-            font-size: 2em;
+            font-size: 2.5em;
         }
 
         .hero h2 {
-            font-size: 2.5em;
+            font-size: 3.5em;
         }
 
         /* About Section */
         .about {
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
             background: #f0f0f0;
+            font-size: 1.2em;
         }
 
         .about h2 {
             color: #ff6a00;
-            font-size: 2.5em;
+            font-size: 3em;
         }
 
         .about p {
             color: #555;
-            font-size: 1.2em;
             margin-top: 20px;
         }
 
@@ -86,33 +94,36 @@
         footer {
             background-color: #333;
             color: white;
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
         }
 
         footer a {
             color: #f8c8d4;
             text-decoration: none;
+            transition: color 0.3s;
         }
 
         footer a:hover {
+            color: #ff6a00;
             text-decoration: underline;
         }
 
         /* Button Styles */
         .btn {
             background-color: #ff6a00;
-            padding: 15px 30px;
-            font-size: 1.2em;
+            padding: 15px 40px;
+            font-size: 1.3em;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
         .btn:hover {
             background-color: #ee0979;
+            transform: scale(1.05);
         }
 
         /* Social Media Links */
@@ -122,8 +133,8 @@
         }
 
         .social-links a {
-            margin: 0 15px;
-            font-size: 2em;
+            margin: 0 20px;
+            font-size: 2.5em;
             color: #333;
             text-decoration: none;
             transition: color 0.3s;
@@ -133,7 +144,7 @@
             color: #ff6a00;
         }
 
-        /* Animation for Buy Now Button */
+        /* Animation for Coming Soon Button */
         .coming-soon {
             animation: fadeIn 1.5s ease-in-out;
         }
@@ -184,9 +195,10 @@
 
 <section class="social-links">
     <h3>Follow Us for More Updates</h3>
-    <a href="https://www.linkedin.com">
-    <img src="https://github.com/yvdkausthubh/the-iot-revolution/blob/main/download.png" alt="" width="50">
-</a>
+    <a href="https://www.linkedin.com" target="_blank">
+        <img src="https://github.com/yvdkausthubh/the-iot-revolution/blob/main/download.png" alt="LinkedIn" width="50">
+    </a>
+</section>
 
 <footer>
     <p>&copy; 2025 The IoT Revolution. All rights reserved.</p>
